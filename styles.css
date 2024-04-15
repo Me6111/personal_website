@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black; /* Set the background color here */
+  }
+
+  .background-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('background2.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; /* Ensures the background is behind the content */
+    transform: translate(-50%, -50%);
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Sets width to 80% of viewport width */
+    height: 100vh; /* Sets height to 80% of viewport height */
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .content-container-name {
+    background-color: black;
+    color: green;
+    width: 70%;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+
+    font-family: Consolas, Monaco, 'Droid Sans Mono', sans-serif;
+
+  }
+
+  .content-container-sub {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    display: flex;
+    border-radius: 15px;
+
+
+    flex-direction: column; /* Ensures content stacks vertically */
+    justify-content: flex-start; /* Aligns content to top */
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  @media (max-width: 750px) {
+    .content-container-sub {
+      width: 90%;
+      height: 90%;
+    }
+  }
+  
+
+
+
+.sub-page-container {
+    color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-page-container-title {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 20px;
+
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 0 1px 1px rgba(0, 128, 0, 0.5);
+
+
+    font-family: 'CustomFont', sans-serif; /* unique font name */
+    margin-left: 0.6vw; /*  original letter spacing for larger screens */
+    letter-spacing: 1vw; /* letter spacing as needed for smaller screens */
+    word-spacing: 0.5vw; /* word spacing as needed for smaller screens */
+    font-size: 3vw; /* font size as needed for smaller screens */
+
+}
+
+.sub-page-container-title:hover {
+    color: white;
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0) 0%, rgba(0, 128, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.sub-page-container-content {
+    text-align: center;
+    box-shadow: inset 0 0 1px 1px rgba(48, 48, 48, 0.5);
+
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255, 0.6);
+    border-radius: 15px;
+
+    font-family: 'CustomFont', sans-serif; /* unique font name */
+    margin-left: 0.3vw; /*  original letter spacing for larger screens */
+    letter-spacing: 0.5vw; /* letter spacing as needed for smaller screens */
+    word-spacing: 0.25vw; /* word spacing as needed for smaller screens */
+    font-size: 1.5vw; /* font size as needed for smaller screens */
+
+    overflow: hidden;
+    padding: 0;
+    height: 0;
+
+    overflow-y: auto; /* Enables vertical scrolling */
+
+}
+@media (max-width: 750px) {
+    .sub-page-container-content {
+        margin-left: 0.6vw; /*  original letter spacing for larger screens */
+        letter-spacing: 1vw; /* letter spacing as needed for smaller screens */
+        word-spacing: 0.5vw; /* word spacing as needed for smaller screens */
+        font-size: 3vw; /* font size as needed for smaller screens */
+    }
+  }
+  
+
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
