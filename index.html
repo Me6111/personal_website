@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Button</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black; /* Set the background color here */
+    }
+
+    .background-container {
+      position: absolute;
+      border-radius: 10px;
+      top: 50%;
+      left: 50%;
+      width: 95%;
+      height: 95%;
+      background-image: url('background.gif');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1; /* Ensures the background is behind the content */
+      transform: translate(-50%, -50%);
+    }
+
+    .content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Adjust width as needed */
+  height: 50%; /* Adjust height as needed */
+  background-color: rgba(255, 0, 0, 0.671); /* Adjust color as desired */
+  position: absolute; /* Added for centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Added for centering */
+}
+
+  </style>
+</head>
+<body>
+  <div class="background-container"></div>
+  <div class="content-container">
+    Hello
+    </div>
+  <script src="button.js"></script>
+</body>
+</html>
