@@ -47,6 +47,12 @@ body {
     font-family: Consolas, Monaco, 'Droid Sans Mono', sans-serif;
 
   }
+  @media (max-width: 750px) {
+    .content-container-name {
+      width: 90%;
+    }
+  }
+  
 
   .content-container-sub {
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
@@ -57,8 +63,9 @@ body {
     flex-direction: column; /* Ensures content stacks vertically */
     justify-content: flex-start; /* Aligns content to top */
     align-items: center;
+
     width: 70%;
-    height: 70%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     overflow-y: auto; /* Enables vertical scrolling */
   }
